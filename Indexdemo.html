@@ -1,0 +1,729 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DELICIOUS - Cà Phê & Bánh Ngọt</title>
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Be+Vietnam+Pro:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"> -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- ===== TOP BAR ===== -->
+    <div class="top-bar" style="background: white">
+      <div class="container-bar">
+        <span>Hotline: <a href="tel:0433853986">(0433) 853 986</a></span>
+
+        <div class="top-bar-right">
+          <div class="search-bar">
+            <input type="text" placeholder="Tìm sản phẩm..." />
+            <button><i class="fas fa-search"></i></button>
+          </div>
+          <a href="#">Nhập vào tài khoản</a>
+          <a href="#">Đăng ký</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===== HEADER ===== -->
+    <header>
+      <div class="container-bar">
+        <div class="header-inner"></div>
+      </div>
+      <nav>
+        <div class="container-bar">
+          <div class="nav-inner">
+            <a href="#" class="logo">
+              <div class="logo-icon"><i class="fas fa-utensils"></i></div>
+            </a>
+            <div class="logo-text">
+              <span class="brand">DELICIOUS</span>
+              <span class="sub">Cafe &amp; Bakery</span>
+            </div>
+            <a href="#" class="active"><i class="fas fa-home"></i> Trang chủ</a>
+            <a href="#"><i class="fas fa-th-large"></i> Sản phẩm</a>
+            <a href="#"><i class="fas fa-info-circle"></i> Giới thiệu</a>
+            <a href="#"><i class="fas fa-blog"></i> Blog</a>
+            <a href="#"><i class="fas fa-phone"></i> Liên hệ</a>
+
+            <div class="header-actions">
+              <a href="#" class="cart-btn">
+                <i class="fas fa-shopping-cart"></i>
+                Giỏ hàng
+                <span class="cart-count">0</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- ===== HERO ===== -->
+    <section class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <p class="label">Đặc sản của chúng tôi</p>
+          <h1 class="hero-title">
+            Cà Phê<br /><span>Espresso Macchiato</span>
+          </h1>
+          <p class="hero-desc">
+            Espresso Macchiato là một loại đồ uống nóng rất được ưa chuộng.
+            Thành phần của nó gồm cà phê espresso và sữa. Về vị thì 9% Espresso
+            Macchiato giống như cà phê đen, nhưng bổ sung thêm một chút sữa
+            tươi.
+          </p>
+          <a href="#" class="btn-primary"
+            >MUA NGAY <i class="fas fa-arrow-right"></i
+          ></a>
+        </div>
+      </div>
+      <div class="hero-badge">
+        <span>GIẢM GIÁ</span>
+        <span class="pct">15%</span>
+      </div>
+      <div class="hero-img"></div>
+    </section>
+
+    <!-- ===== MÓN ĂN NỔI BẬT ===== -->
+    <section class="featured">
+      <div class="container" style="background: #f8f4f0">
+        <div class="section-title">
+          <span class="icon"><i class="fas fa-star"></i></span>
+          <h2>MÓN ĂN NỔI BẬT</h2>
+        </div>
+        <div class="products-grid">
+          <div class="product-card">
+            <span class="badge-sale">-15%</span>
+
+            <img src="12.jpg" alt="Bánh Mousse caramel" class="auto-img" />
+            <div class="product-info">
+              <p class="product-name">Sample Product</p>
+              <span class="product-price">120.000₫</span>
+              <span class="product-price-old">150.000₫</span>
+            </div>
+            <div class="product-actions">
+              <button class="btn-cart">
+                <i class="fas fa-shopping-cart"></i>
+              </button>
+              <button class="btn-wish"><i class="fas fa-heart"></i></button>
+            </div>
+          </div>
+          <div class="product-card">
+            <img src="16.jpg" alt="Bánh Mousse caramel" class="auto-img" />
+            <div class="product-info">
+              <p class="product-name">Sample Product</p>
+              <span class="product-price">120.000₫</span>
+            </div>
+            <div class="product-actions">
+              <button class="btn-cart">
+                <i class="fas fa-shopping-cart"></i>
+              </button>
+              <button class="btn-wish"><i class="fas fa-heart"></i></button>
+            </div>
+          </div>
+          <div class="product-card">
+            <img src="6.jpg" alt="Bánh Mousse caramel" class="auto-img" />
+            <div class="product-info">
+              <p class="product-name">Sample Product</p>
+              <span class="product-price">120.000₫</span>
+            </div>
+            <div class="product-actions">
+              <button class="btn-cart">
+                <i class="fas fa-shopping-cart"></i>
+              </button>
+              <button class="btn-wish"><i class="fas fa-heart"></i></button>
+            </div>
+          </div>
+        </div>
+        <div class="dots">
+          <div class="dot active"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== BÁNH NGỌT ===== -->
+    <section class="cat-section" style="background: white">
+      <div class="section-title">
+        <span class="icon"><i class="fas fa-birthday-cake"></i></span>
+        <h2>BÁNH NGỌT</h2>
+      </div>
+      <div class="container">
+        <!-- <div class="section-title">
+      <span class="icon"><i class="fas fa-birthday-cake"></i></span>
+      <h2>BÁNH NGỌT</h2>
+    </div> -->
+        <div class="cat-layout">
+          <div class="cat-sidebar">
+            <!-- <div class="cat-sidebar-img-placeholder" style="background:linear-gradient(135deg,#3b1f0c,#7a3b1e)">🍩</div> -->
+            <img src="12.jpg" alt="Bánh Mousse caramel" class="auto-img" />
+            <div class="cat-list">
+              <a href="#"
+                >Bánh ngọt loại 1 <i class="fas fa-chevron-right"></i
+              ></a>
+              <a href="#"
+                >Bánh ngọt loại 2 <i class="fas fa-chevron-right"></i
+              ></a>
+              <a href="#"
+                >Bánh ngọt loại 3 <i class="fas fa-chevron-right"></i
+              ></a>
+              <a href="#"
+                >Bánh ngọt loại 4 <i class="fas fa-chevron-right"></i
+              ></a>
+            </div>
+          </div>
+          <div class="cat-products">
+            <div class="product-card">
+              <img src="12.jpg" alt="Bánh Mousse caramel" class="product-img" />
+              <div class="product-info">
+                <p class="product-name">
+                  Bánh phô mai tráng miệng cao cấp Pháp
+                </p>
+                <span class="product-price">120.000₫</span>
+              </div>
+              <div class="product-actions">
+                <button class="btn-cart">
+                  <i class="fas fa-shopping-cart"></i></button
+                ><button class="btn-wish"><i class="fas fa-heart"></i></button>
+              </div>
+            </div>
+            <div class="product-card">
+              <img src="12.jpg" alt="Bánh Mousse caramel" class="product-img" />
+              <div class="product-info">
+                <p class="product-name">
+                  Bánh phô mai tráng miệng cao cấp Pháp
+                </p>
+                <span class="product-price">120.000₫</span>
+              </div>
+              <div class="product-actions">
+                <button class="btn-cart">
+                  <i class="fas fa-shopping-cart"></i></button
+                ><button class="btn-wish"><i class="fas fa-heart"></i></button>
+              </div>
+            </div>
+            <div class="product-card">
+              <img src="12.jpg" alt="Bánh Mousse caramel" class="product-img" />
+              <div class="product-info">
+                <p class="product-name">
+                  Bánh phô mai tráng miệng cao cấp Pháp
+                </p>
+                <span class="product-price">120.000₫</span>
+              </div>
+              <div class="product-actions">
+                <button class="btn-cart">
+                  <i class="fas fa-shopping-cart"></i></button
+                ><button class="btn-wish"><i class="fas fa-heart"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== KEM TƯƠI ===== -->
+    <section class="cat-section" style="background: white">
+      <div class="section-title">
+        <span class="icon"><i class="fas fa-ice-cream"></i></span>
+        <h2>KEM TƯƠI</h2>
+      </div>
+      <div class="container">
+        <div class="cat-layout">
+          <div class="cat-sidebar">
+            <div
+              class="cat-sidebar-img-placeholder"
+              style="background: linear-gradient(135deg, #3b1f0c, #5a2d14)"
+            >
+              🍫
+            </div>
+            <div class="cat-list" style="background: var(--gold)">
+              <a href="#"
+                >Kem tươi loại 1 <i class="fas fa-chevron-right"></i
+              ></a>
+              <a href="#"
+                >Kem tươi loại 2 <i class="fas fa-chevron-right"></i
+              ></a>
+              <a href="#"
+                >Kem tươi loại 3 <i class="fas fa-chevron-right"></i
+              ></a>
+              <a href="#"
+                >Kem tươi loại 4 <i class="fas fa-chevron-right"></i
+              ></a>
+            </div>
+          </div>
+          <div class="cat-products">
+            <div class="product-card">
+              <img src="12.jpg" alt="Bánh Mousse caramel" class="product-img" />
+              <div class="product-info">
+                <p class="product-name">
+                  Bánh phô mai tráng miệng cao cấp Pháp
+                </p>
+                <span class="product-price">125.000₫</span>
+              </div>
+              <div class="product-actions">
+                <button class="btn-cart">
+                  <i class="fas fa-shopping-cart"></i></button
+                ><button class="btn-wish"><i class="fas fa-heart"></i></button>
+              </div>
+            </div>
+            <div class="product-card">
+              <img src="12.jpg" alt="Bánh Mousse caramel" class="product-img" />
+              <div class="product-info">
+                <p class="product-name">
+                  Bánh phô mai tráng miệng cao cấp Pháp
+                </p>
+                <span class="product-price">125.000₫</span>
+              </div>
+              <div class="product-actions">
+                <button class="btn-cart">
+                  <i class="fas fa-shopping-cart"></i></button
+                ><button class="btn-wish"><i class="fas fa-heart"></i></button>
+              </div>
+            </div>
+            <div class="product-card">
+              <img src="12.jpg" alt="Bánh Mousse caramel" class="product-img" />
+              <div class="product-info">
+                <p class="product-name">
+                  Bánh phô mai tráng miệng cao cấp Pháp
+                </p>
+                <span class="product-price">120.000₫</span>
+              </div>
+              <div class="product-actions">
+                <button class="btn-cart">
+                  <i class="fas fa-shopping-cart"></i></button
+                ><button class="btn-wish"><i class="fas fa-heart"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== ĐỒ UỐNG ===== -->
+    <section class="cat-section" style="background: white">
+      <div class="section-title">
+        <span class="icon"><i class="fas fa-coffee"></i></span>
+        <h2>ĐỒ UỐNG</h2>
+      </div>
+      <div class="container">
+        <div class="cat-layout">
+          <div class="cat-sidebar">
+            <img src="12.jpg" alt="Bánh Mousse caramel" class="product-img" />
+            <div class="cat-list" style="background: #d32f2f">
+              <a href="#"
+                >Đồ uống loại 1 <i class="fas fa-chevron-right"></i
+              ></a>
+              <a href="#"
+                >Đồ uống loại 2 <i class="fas fa-chevron-right"></i
+              ></a>
+              <a href="#"
+                >Đồ uống loại 3 <i class="fas fa-chevron-right"></i
+              ></a>
+              <a href="#"
+                >Đồ uống loại 4 <i class="fas fa-chevron-right"></i
+              ></a>
+            </div>
+          </div>
+          <div class="cat-products">
+            <div class="product-card">
+              <img src="12.jpg" alt="Bánh Mousse caramel" class="product-img" />
+              <div class="product-info">
+                <p class="product-name">
+                  Bánh phô mai tráng miệng cao cấp Pháp
+                </p>
+                <span class="product-price">120.000₫</span>
+              </div>
+              <div class="product-actions">
+                <button class="btn-cart">
+                  <i class="fas fa-shopping-cart"></i></button
+                ><button class="btn-wish"><i class="fas fa-heart"></i></button>
+              </div>
+            </div>
+            <div class="product-card">
+              <img src="12.jpg" alt="Bánh Mousse caramel" class="product-img" />
+              <div class="product-info">
+                <p class="product-name">
+                  Bánh phô mai tráng miệng cao cấp Pháp
+                </p>
+                <span class="product-price">120.000₫</span>
+              </div>
+              <div class="product-actions">
+                <button class="btn-cart">
+                  <i class="fas fa-shopping-cart"></i></button
+                ><button class="btn-wish"><i class="fas fa-heart"></i></button>
+              </div>
+            </div>
+            <div class="product-card">
+              <img src="12.jpg" alt="Bánh Mousse caramel" class="product-img" />
+              <div class="product-info">
+                <p class="product-name">
+                  Bánh phô mai tráng miệng cao cấp Pháp
+                </p>
+                <span class="product-price">120.000₫</span>
+              </div>
+              <div class="product-actions">
+                <button class="btn-cart">
+                  <i class="fas fa-shopping-cart"></i></button
+                ><button class="btn-wish"><i class="fas fa-heart"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== MÓN ĂN MỚI ===== -->
+    <section class="new-items">
+      <div class="container container-monanmoi">
+        <div class="section-title">
+          <span class="icon"><i class="fas fa-fire"></i></span>
+          <h2>MÓN ĂN MỚI</h2>
+        </div>
+        <div class="new-grid">
+          <div class="new-card">
+            <div class="new-card-img-placeholder">🍫</div>
+            <div class="new-card-info">
+              <p class="new-card-name">Bánh Mousse caramel</p>
+              <p class="new-card-price">90.000₫</p>
+              <p class="new-card-desc">
+                Tiếp tục lấy buitrong ngọt nhất của ngày hôm nay cùng của chúng
+                tôi. Bánh mousse caramel mềm, bạn sẽ thấy sẽ thích thú nữa!
+              </p>
+            </div>
+          </div>
+          <div class="new-card">
+            <img data-src="10.jpg" alt="Bánh Mousse caramel" class="auto-img" />
+            <!-- <div class="new-card-img-placeholder">🎂</div> -->
+            <div class="new-card-info">
+              <p class="new-card-name">Bánh Mousse caramel</p>
+              <p class="new-card-price">90.000₫</p>
+              <p class="new-card-desc">
+                Tiếp tục lấy buitrong ngọt nhất của ngày hôm nay cùng của chúng
+                tôi. Bánh mousse caramel mềm, bạn sẽ thấy sẽ thích thú nữa!
+              </p>
+            </div>
+          </div>
+          <div class="new-card">
+            <div class="new-card-img-placeholder">🍰</div>
+            <div class="new-card-info">
+              <p class="new-card-name">Bánh Mousse caramel</p>
+              <p class="new-card-price">90.000₫</p>
+              <p class="new-card-desc">
+                Tiếp tục lấy buitrong ngọt nhất của ngày hôm nay cùng của chúng
+                tôi. Bánh mousse caramel mềm, bạn sẽ thấy sẽ thích thú nữa!
+              </p>
+            </div>
+          </div>
+          <div class="new-card">
+            <div class="new-card-img-placeholder">🧁</div>
+            <div class="new-card-info">
+              <p class="new-card-name">Bánh Mousse caramel</p>
+              <p class="new-card-price">90.000₫</p>
+              <p class="new-card-desc">
+                Tiếp tục lấy buitrong ngọt nhất của ngày hôm nay cùng của chúng
+                tôi. Bánh mousse caramel mềm, bạn sẽ thấy sẽ thích thú nữa!
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== BLOG ===== -->
+    <section class="blog-section">
+      <div class="container" style="background: #f8f4f0">
+        <div class="section-title">
+          <span class="icon"><i class="fas fa-newspaper"></i></span>
+          <h2>BLOG</h2>
+        </div>
+        <div class="blog-grid">
+          <div class="blog-card">
+            <div style="position: relative">
+              <div
+                class="blog-card-img-placeholder"
+                style="background: linear-gradient(135deg, #3b1f0c, #7a3b1e)"
+              >
+                🍦
+              </div>
+              <span class="blog-tag">KEM TƯƠI</span>
+            </div>
+            <div class="blog-card-body">
+              <p class="blog-card-tag">KEM TƯƠI</p>
+              <p class="blog-card-title">
+                Các cách bảo quản kem siêu hiệu quả tại nhà cho bạn
+              </p>
+              <div
+                style="
+                  display: flex;
+                  justify-content: space-between;
+                  align-items: center;
+                  margin-top: 10px;
+                "
+              >
+                <span class="blog-card-date"
+                  ><i class="fas fa-calendar-alt"></i> 01/01/2024</span
+                >
+                <a href="#" class="read-more">Xem thêm</a>
+              </div>
+            </div>
+          </div>
+          <div class="blog-card">
+            <div style="position: relative">
+              <div
+                class="blog-card-img-placeholder"
+                style="background: linear-gradient(135deg, #e1f5fe, #4fc3f7)"
+              >
+                🌈
+              </div>
+              <span class="blog-tag" style="background: var(--gold)"
+                >ĐỒ UỐNG</span
+              >
+            </div>
+            <div class="blog-card-body">
+              <p class="blog-card-tag" style="color: var(--gold)">ĐỒ UỐNG</p>
+              <p class="blog-card-title">
+                Cách làm sinh tố cầu vồng nhiều màu sắc giàu dinh dưỡng
+              </p>
+              <div
+                style="
+                  display: flex;
+                  justify-content: space-between;
+                  align-items: center;
+                  margin-top: 10px;
+                "
+              >
+                <span class="blog-card-date"
+                  ><i class="fas fa-calendar-alt"></i> 15/12/2023</span
+                >
+                <a href="#" class="read-more">Xem thêm</a>
+              </div>
+            </div>
+          </div>
+          <div class="blog-card">
+            <div style="position: relative">
+              <div
+                class="blog-card-img-placeholder"
+                style="background: linear-gradient(135deg, #3b1f0c, #5a2d14)"
+              >
+                🎂
+              </div>
+              <span class="blog-tag" style="background: #4caf50"
+                >CÔNG THỨC BÁNH</span
+              >
+            </div>
+            <div class="blog-card-body">
+              <p class="blog-card-tag" style="color: #4caf50">CÔNG THỨC BÁNH</p>
+              <p class="blog-card-title">
+                Cách làm bánh kem tuyệt ngon cực kỳ ngon mà siêu đẹp mắt
+              </p>
+              <div
+                style="
+                  display: flex;
+                  justify-content: space-between;
+                  align-items: center;
+                  margin-top: 10px;
+                "
+              >
+                <span class="blog-card-date"
+                  ><i class="fas fa-calendar-alt"></i> 08/11/2023</span
+                >
+                <a href="#" class="read-more">Xem thêm</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== ABOUT ===== -->
+    <section class="about-section">
+      <div class="container" style="background: white">
+        <div class="about-grid">
+          <div class="about-img-placeholder">👨‍🍳</div>
+          <div class="about-content">
+            <div class="logo-big">
+              <div
+                style="
+                  width: 44px;
+                  height: 44px;
+                  background: var(--primary);
+                  border-radius: 50%;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  color: white;
+                  font-size: 20px;
+                "
+              >
+                <i class="fas fa-utensils"></i>
+              </div>
+              DELICIOUS
+            </div>
+            <p>
+              Được truyền cảm hứng và tận tâm với DELICIOUS bằng tâm huyết trao
+              đi những giá trị đặc biệt nhất cho khách hàng, chúng tôi không
+              ngừng mang lại hương vị tuyệt vời nhất từ thiên nhiên.
+            </p>
+            <p>
+              Tại DELICIOUS, mỗi chiếc bánh, mỗi ly đồ uống đều được làm bằng
+              nguyên liệu tươi ngon nhất. Chúng tôi cam kết mang đến cho bạn
+              những sản phẩm chất lượng cao với giá cả hợp lý.
+            </p>
+            <p>Kết nối với chúng tôi:</p>
+            <div class="social-links">
+              <a href="#" class="social-link fb"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a href="#" class="social-link tw"
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a href="#" class="social-link yt"
+                ><i class="fab fa-youtube"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FEATURES ===== -->
+    <div class="features">
+      <div class="container">
+        <div class="features-grid">
+          <div class="feature-item">
+            <div class="feature-icon orange">
+              <i class="fas fa-shipping-fast"></i>
+            </div>
+            <p class="feature-title">CHUYỂN PHÁT NHANH</p>
+            <p class="feature-desc">
+              Đảm bảo giao hàng tốc thần tốc. Dịch vụ 1 – 2 ngày làm việc. Giao
+              hàng miễn phí cho đơn từ 200.000₫
+            </p>
+          </div>
+          <div class="feature-item">
+            <div class="feature-icon gold">
+              <i class="fas fa-birthday-cake"></i>
+            </div>
+            <p class="feature-title">LÀM BÁNH THEO YÊU CẦU</p>
+            <p class="feature-desc">
+              Thiết kế bánh theo ý muốn của bạn với đội ngũ thợ lành nghề tay
+              nghề cao, sáng tạo và tận tâm
+            </p>
+          </div>
+          <div class="feature-item">
+            <div class="feature-icon green"><i class="fas fa-headset"></i></div>
+            <p class="feature-title">HỖ TRỢ KHÁCH HÀNG</p>
+            <p class="feature-desc">
+              Chúng tôi luôn sẵn sàng hỗ trợ khách hàng 24/7. Liên hệ qua
+              hotline hoặc chat trực tuyến
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===== FOOTER ===== -->
+    <footer>
+      <div class="footer-top">
+        <div class="container">
+          <div class="footer-grid">
+            <div class="footer-col">
+              <h4>LIÊN HỆ</h4>
+              <p>
+                <i class="fas fa-map-marker-alt"></i> Số 2 – Tòa nhà Hanova
+                Group, 442 Đội Cấn, Ba Đình, Hà Nội
+              </p>
+              <p><i class="fas fa-phone"></i> (04) 33.853.986</p>
+              <p><i class="fas fa-fax"></i> (04)2.3456.7890</p>
+              <p><i class="fas fa-envelope"></i> info@delicious.vn</p>
+            </div>
+            <div class="footer-col">
+              <h4>HỖ TRỢ KHÁCH HÀNG</h4>
+              <ul>
+                <li>
+                  <a href="#"
+                    ><i class="fas fa-angle-right"></i> Liên hệ và góp ý</a
+                  >
+                </li>
+                <li>
+                  <a href="#"
+                    ><i class="fas fa-angle-right"></i> Hướng dẫn mua hàng</a
+                  >
+                </li>
+                <li>
+                  <a href="#"
+                    ><i class="fas fa-angle-right"></i> Câu hỏi thường gặp</a
+                  >
+                </li>
+                <li>
+                  <a href="#"><i class="fas fa-angle-right"></i> Khuyến mãi</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h4>CHÍNH SÁCH MUA HÀNG</h4>
+              <ul>
+                <li>
+                  <a href="#"
+                    ><i class="fas fa-angle-right"></i> Chính sách bảo hành</a
+                  >
+                </li>
+                <li>
+                  <a href="#"
+                    ><i class="fas fa-angle-right"></i> Chính sách đổi trả</a
+                  >
+                </li>
+                <li>
+                  <a href="#"
+                    ><i class="fas fa-angle-right"></i> Giao nhận &amp; thanh
+                    toán</a
+                  >
+                </li>
+                <li>
+                  <a href="#"
+                    ><i class="fas fa-angle-right"></i> Bảo mật thông tin</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h4>ĐĂNG KÝ NHẬN TIN</h4>
+              <p>
+                Đăng ký nhận thông tin ưu đãi và tin tức mới nhất từ DELICIOUS
+              </p>
+              <div class="newsletter-form">
+                <input type="email" placeholder="Email của bạn..." />
+                <button>ĐĂNG KÝ</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="footer-bottom">
+          <span
+            >© 2024 <a href="#">DELICIOUS</a>. Thiết kế bởi
+            <a href="#">ToanHoa</a></span
+          >
+          <div class="footer-bottom-links">
+            <a href="#">Trang chủ</a>
+            <a href="#">Sản phẩm</a>
+            <a href="#">Liên hệ</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script>
+      // 1. CHỈ CẦN SỬA ĐƯỜNG DẪN THƯ MỤC TẠI ĐÂY
+      const baseImagePath = "D:\\IT\\sapo\\ex11\\";
+
+      // 2. Tự động gắn đường dẫn vào các ảnh có class "auto-img"
+      document.querySelectorAll(".auto-img").forEach((img) => {
+        const fileName = img.getAttribute("data-src");
+        if (fileName) {
+          img.src = baseImagePath + fileName;
+        }
+      });
+    </script>
+  </body>
+</html>
