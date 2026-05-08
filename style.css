@@ -757,7 +757,7 @@ section {
 /* Placeholder ảnh blog */
 .blog-card-img-placeholder {
   width: 100%;
-  height: 180px; /* Kích thước bằng ảnh thật */
+  height: auto; /* Kích thước bằng ảnh thật */
   display: flex;
   align-items: center;
   justify-content: center; /* Căn giữa icon */
