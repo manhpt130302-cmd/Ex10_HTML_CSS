@@ -1051,8 +1051,8 @@ footer {
 /* Button trong newsletter form */
 .newsletter-form button {
   background: var(--primary); /* Nền cam */
-  border: none; /* Bỏ viền */
-  padding: 0 18px; /* Padding trái/phải 18px */
+  border-radius: 8px; /* Bỏ viền */
+  padding: 10px 14px;
   color: white; /* Chữ trắng */
   cursor: pointer; /* Con trỏ bàn tay */
   font-size: 13px; /* Cỡ chữ 13px */
