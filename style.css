@@ -21,7 +21,12 @@
   box-sizing: border-box;
 }
 /* box-sizing: border-box - đảm bảo padding và border không làm tăng kích thước element */
-
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
 /* Style cho toàn bộ body */
 body {
   font-family: "Be Vietnam Pro", sans-serif; /* Font chính hiện đại */
@@ -30,6 +35,8 @@ body {
   margin: 0;
   padding: 0;
   line-height: 1;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 /* ===== CONTAINER ===== */

@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* ══ MAIN ══ */
+.main {
+  background: #f5f5f5;
+  min-height: 320px;
+  /* padding: 20px 0 44px; */
+  padding: 20px 0 100px;
+}
+.container-main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px 0;
+}
+
+.breadcrumb {
+  font-size: 13px;
+  color: #555;
+  margin-bottom: 10px;
+}
+.breadcrumb a {
+  color: #555;
+}
+.breadcrumb .sep {
+  margin: 0 5px;
+}
+.breadcrumb .current {
+  color: #e8602c;
+}
+
+.page-title {
+  font-size: 20px;
+  font-weight: 700;
+  color: #333;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+  letter-spacing: 0.3px;
+}
+
+.form-card {
+  background: #fff;
+  border: 1px solid #e0e0e0;
+  padding: 26px 28px 30px;
+}
+.form-intro {
+  font-size: 13.5px;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px 30px;
+  margin-bottom: 20px;
+}
+.field label {
+  display: block;
+  font-size: 13.5px;
+  color: #444;
+  margin-bottom: 6px;
+}
+.field input {
+  width: 100%;
+  height: 40px;
+  border: 1px solid #ccc;
+  padding: 0 10px;
+  font-size: 14px;
+  outline: none;
+  background: #fff;
+  transition: border-color 0.2s;
+}
+.field input:focus {
+  border-color: #e8602c;
+}
+
+.btn-signup {
+  height: 38px;
+  padding: 0 26px;
+  background: #e8602c;
+  color: #fff;
+  border: none;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 2px;
+  transition: background 0.2s;
+  margin-bottom: 20px;
+  display: block;
+}
+.btn-signup:hover {
+  background: #cf5225;
+}
+
+.signin-text {
+  font-size: 13.5px;
+  color: #555;
+}
+.signin-text a {
+  color: #e8602c;
+}
+.signin-text a:hover {
+  text-decoration: underline;
+}
+.background-text {
+  background-color: #f5f5f5 !important;
+}
+/* Thêm vào đầu file hoặc cuối file */
+html {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+.main {
+  flex: 1; /* Chiếm toàn bộ khoảng trống còn lại */
+  background: #f5f5f5;
+  padding: 20px 0 0; /* Bỏ padding-bottom */
+}
+
+/* Footer tự động xuống cuối */
+footer {
+  margin-top: 0;
+}
