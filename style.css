@@ -27,6 +27,9 @@ body {
   font-family: "Be Vietnam Pro", sans-serif; /* Font chính hiện đại */
   color: var(--text); /* Màu chữ mặc định */
   background: var(--white); /* Nền trắng */
+  margin: 0;
+  padding: 0;
+  line-height: 1;
 }
 
 /* ===== CONTAINER ===== */
@@ -36,6 +39,14 @@ body {
   margin: 0 auto; /* margin: 0 (top/bottom) + auto (left/right) => căn giữa */
   padding: 0 20px; /* padding 2 bên 20px, tránm dính mép trên mobile */
   background: #eaeaea;
+  padding-left: 0;
+}
+.hero .container {
+  max-width: 1200px; /* Chiều rộng tối đa 1200px */
+  margin: 0 auto; /* margin: 0 (top/bottom) + auto (left/right) => căn giữa */
+  padding: 0 20px; /* padding 2 bên 20px, tránm dính mép trên mobile */
+  background: #371e05;
+  padding-left: 0;
 }
 
 /* ===== TOP BAR ===== */
@@ -217,6 +228,14 @@ nav {
   align-items: center; /* Căn giữa theo chiều dọc */
   gap: 0; /* Không có khoảng cách giữa các link */
 }
+.nav-inner-right {
+  margin-left: auto; /* Đẩy phần này sang phải */
+  display: flex;
+  color: #ccc; /* Màu xám sáng */
+  text-decoration: none;
+  /* Bỏ gạch chân */
+  align-items: center; /* Căn giữa theo chiều dọc */
+}
 /* Link trong nav */
 nav a {
   padding: 14px 20px; /* Padding xung quanh link */
@@ -254,19 +273,37 @@ nav a i {
     #4a2008 100%
   );
   /* Gradient từ nâu đen -> nâu đậm -> nâu đỏ, góc 135 độ */
-  min-height: 420px; /* Chiều cao tối thiểu 420px */
+  min-height: 520px; /* Chiều cao tối thiểu 420px */
+  height: 520px;
   display: flex; /* Flex để căn nội dung */
   align-items: center; /* Căn giữa theo chiều dọc */
   position: relative; /* Relative để các phần tử absolute position dựa vào */
   overflow: hidden; /* Ẩn phần thừa */
+
+  padding: 0;
+}
+/* Container bên trong */
+.hero .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+  /* border-top-right-radius: 25% 65%;
+  border-bottom-right-radius: 25% 65%; */
+  clip-path: ellipse(100% 120% at 0% 50%);
+  margin-left: 0;
 }
 /* Pseudo-element tạo lớp phủ ảnh nền */
 .hero::before {
   content: ""; /* Nội dung rỗng nhưng vẫn hiển thị */
   position: absolute; /* Định vị tuyệt đối so với hero */
   inset: 0; /* top:0, right:0, bottom:0, left:0 - chiếm toàn bộ */
-  background: url("https://images.unsplash.com/photo-1447933601403-0c6688de566e?w=1200&q=80")
-    center/cover no-repeat;
+
   /* Ảnh nền, căn giữa, phủ kín, không lặp lại */
   opacity: 0.25; /* Độ mờ 25% */
 }
@@ -274,8 +311,9 @@ nav a i {
 .hero-content {
   position: relative; /* Relative để nổi trên pseudo-element */
   z-index: 2; /* Độ ưu tiên cao hơn */
-  max-width: 500px; /* Chiều rộng tối đa 500px */
-  padding: 60px 0; /* Padding trên/dưới 60px */
+  max-width: 100%; /* Chiều rộng tối đa 500px */
+  padding: 60px 60px; /* Padding trên/dưới 60px */
+  border-radius: 20px;
 }
 /* Label nhỏ trong hero */
 .hero-content .label {
@@ -308,9 +346,10 @@ nav a i {
 /* Badge hình tròn nổi bật trong hero */
 .hero-badge {
   position: absolute; /* Định vị tuyệt đối so với hero */
-  right: 120px; /* Cách mép phải 120px */
+
   top: 50%; /* Cách top 50% chiều cao hero */
-  transform: translateY(-50%); /* Dịch ngược lên 50% của chính nó để căn giữa */
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%); /* dịch chuyển phần tử lên trên 50% chiều cao của nó và sang trái 50% chiều rộng của nó. */
   width: 90px;
   height: 90px; /* Kích thước 90x90px - hình tròn */
   background: var(--primary); /* Nền cam */
@@ -338,11 +377,15 @@ nav a i {
   right: 0;
   bottom: 0;
   top: 0; /* Dính bên phải, trên, dưới */
-  width: 45%; /* Chiều rộng 45% */
-  background: url("https://images.unsplash.com/photo-1541167760496-1628856ab772?w=700&q=80")
-    center/cover;
+  width: 55%; /* Chiều rộng 45% */
+  background: url("21.jpeg");
+  background-repeat: no-repeat; /* ✅ Không lặp ảnh */
+  background-size: cover; /* ✅ Co ảnh phủ kín khung */
+  background-position: center; /* ✅ Căn giữa ảnh */
   /* Ảnh nền, căn giữa, phủ kín */
-  clip-path: polygon(12% 0, 100% 0, 100% 100%, 0% 100%);
+  min-height: 520px;
+  z-index: 1;
+
   /* Cắt ảnh theo hình đa giác: tạo góc xiên bên trái 12% */
 }
 
@@ -384,6 +427,7 @@ nav a i {
   justify-content: center; /* Căn giữa icon */
   font-size: 14px; /* Cỡ icon */
   transition: all 0.2s; /* Hiệu ứng cho tất cả thuộc tính */
+  z-index: 2; /* Nổi trên ảnh sản phẩm */
 }
 /* Nút thêm giỏ hàng */
 .btn-cart {
@@ -409,12 +453,12 @@ nav a i {
 /* ===== SECTION COMMON ===== */
 /* Style chung cho các section */
 section {
-  padding: 60px 0; /* Padding trên/dưới 60px */
+  padding: 30px 0; /* Padding trên/dưới 60px */
 }
 /* Tiêu đề section */
 .section-title {
   text-align: center; /* Căn giữa chữ */
-  margin-bottom: 40px; /* Khoảng cách dưới 40px */
+  margin-bottom: 45px; /* Khoảng cách dưới 40px */
   position: relative; /* Relative để pseudo-element dựa vào */
 }
 /* Thẻ h2 trong section title */
@@ -424,7 +468,7 @@ section {
   color: var(--text); /* Màu chữ đậm */
   position: relative; /* Relative để gạch chân dựa vào */
   display: inline-block; /* Inline-block để gạch chân chỉ rộng bằng nội dung */
-  padding: 0 16px; /* Padding trái/phải 16px */
+  padding-top: 50px; /* Padding trái/phải 16px */
 }
 /* Tạo đường gạch dưới tiêu đề */
 .section-title h2::before {
@@ -516,9 +560,10 @@ section {
   display: block; /* Block không có khoảng trống */
   border-radius: 8px 8px 0 0; /* Bo góc trên trái và trên phải 8px, dưới 0 */
 }
+
 /* Phần thông tin sản phẩm */
 .product-info {
-  padding: 16px; /* Padding xung quanh 16px */
+  padding: 36px 16px 16px 16px; /* Padding xung quanh 16px */
 }
 /* Tên sản phẩm */
 .product-name {
@@ -546,7 +591,26 @@ section {
   display: flex; /* Flex để các nút nằm ngang */
   gap: 8px; /* Khoảng cách giữa các nút 8px */
 }
-
+.product-card .product-actions {
+  position: absolute;
+  bottom: 90px; /* Sát mép dưới ảnh */
+  left: 50%;
+  transform: translateX(-50%); /* Căn giữa theo chiều ngang */
+  display: flex;
+  gap: 12px;
+  z-index: 2;
+  padding: 0; /* Bỏ padding cũ */
+}
+.product-card .product-actions-1 {
+  position: absolute;
+  bottom: 70px; /* Sát mép dưới ảnh */
+  left: 50%;
+  transform: translateX(-50%); /* Căn giữa theo chiều ngang */
+  display: flex;
+  gap: 12px;
+  z-index: 2;
+  padding: 0; /* Bỏ padding cũ */
+}
 /* ===== CATEGORY SECTION ===== */
 /* Layout cho category section */
 .cat-section {
@@ -559,21 +623,22 @@ section {
 /* Layout 2 cột cho category: sidebar (220px) + sản phẩm (1fr) */
 .cat-layout {
   display: grid;
-  grid-template-columns: 220px 1fr; /* Cột 1: 220px, cột 2: phần còn lại */
+  grid-template-columns: 300px 1fr; /* Cột 1: 220px, cột 2: phần còn lại */
   gap: 24px; /* Khoảng cách 2 cột 24px */
   align-items: start; /* Căn các item bắt đầu từ đỉnh */
+  padding-left: 0%;
 }
 /* Sidebar category */
 .cat-sidebar {
-  margin-top: 20px; /* Tạo khoảng cách phía trên */
-  border-radius: 8px; /* Bo góc 8px */
   overflow: hidden;
   /* Ẩn phần thừa, giữ bo góc */
+  height: 100%; /* Chiều cao full của sidebar */
+  width: 100%; /* Chiều rộng full của sidebar */
 }
 /* Placeholder ảnh sidebar */
 .cat-sidebar-img-placeholder {
   width: 100%;
-  height: 160px; /* Kích thước 160px */
+  height: 100%; /* Kích thước 160px */
   display: flex;
   align-items: center;
   justify-content: center; /* Căn giữa */
@@ -583,21 +648,24 @@ section {
 /* Ảnh auto trong sidebar */
 .cat-sidebar .auto-img {
   width: 100%; /* Chiều rộng full */
-  height: 160px; /* Chiều cao 160px */
+  height: 160px; /* Chiều cao 300px  */
   object-fit: cover; /* Cắt ảnh vừa khung */
   display: block; /* Block để không có khoảng trống */
   border-radius: 8px 8px 0 0; /* Bo góc trên */
 }
+
 /* Danh sách category links */
 .cat-list {
   background: var(--primary); /* Nền cam */
+  height: 100%; /* Chiều cao full của sidebar */
 }
 /* Các link trong category list */
 .cat-list a {
+  flex: 1;
   display: flex; /* Flex để căn text và icon */
   align-items: center; /* Căn giữa theo chiều dọc */
   justify-content: space-between; /* Text bên trái, icon bên phải */
-  padding: 11px 16px; /* Padding trong link */
+  padding: 15px 15px; /* Padding trong link */
   color: white; /* Chữ trắng */
   text-decoration: none; /* Bỏ gạch chân */
   font-size: 13px; /* Cỡ chữ 13px */
@@ -957,8 +1025,21 @@ section {
 /* ===== FOOTER ===== */
 /* Footer với nền tối */
 footer {
-  background: var(--dark); /* Nền nâu đen */
-  color: #bbb; /* Màu chữ xám */
+  position: relative;
+  /* Dùng linear-gradient để tạo lớp phủ đen 70% đè lên ảnh */
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(https://images.unsplash.com/photo-1447933601403-0c6688de566e?w=1200&q=80);
+  background-size: cover;
+  background-position: center;
+  /* XÓA DÒNG opacity: 0.7 ĐI */
+  color: #ddd; /* Nâng màu chữ lên sáng hơn một chút để dễ đọc */
+  padding-bottom: 0 !important;
+  overflow: hidden; /* Cắt bỏ mọi thành phần thừa lòi ra ngoài */
+}
+
+.footer-container-contact .footer-bottom {
+  color: white; /* Chữ ở dưới cùng nên để màu trắng rõ ràng */
 }
 .footer-container {
   max-width: 1200px; /* Chiều rộng tối đa 1200px */
@@ -966,9 +1047,31 @@ footer {
   padding: 0 20px; /* padding 2 bên 20px, tránm dính mép trên mobile */
   background: transparent; /* trong suốt */
 }
+.footer-container-contact {
+  width: 100%; /* Chiều rộng tối đa 1200px */
+
+  background: rgba(255, 255, 255, 0.1); /* trong suốt */
+  backdrop-filter: blur(5px); /* Hiệu ứng kính mờ xịn xò */
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+
+  padding-bottom: 0% !important; /* Bỏ padding dưới để sát mép dưới */
+  margin-bottom: 0 !important;
+}
+/* Phần chứa nội dung bên trong - được căn giữa, cùng khổ với footer trên */
+.footer-container-contact .footer-bottom {
+  max-width: 1200px; /* Cùng chiều rộng với footer-container phía trên */
+  margin: 0 auto; /* Căn giữa */
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  background: transparent; /* Trong suốt để thấy nền trắng của cha */
+}
 /* Phần trên của footer */
 .footer-top {
-  padding: 50px 0 30px; /* Padding: trên=50px, 2 bên=0, dưới=30px */
+  padding: 50px 0 0px; /* Padding: trên=50px, 2 bên=0, dưới=30px */
   border-bottom: 1px solid rgba(255, 255, 255, 0.08); /* Viền dưới mờ trắng 8% */
 }
 /* Grid 4 cột cho footer */

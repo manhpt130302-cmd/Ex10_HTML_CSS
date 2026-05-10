@@ -27,9 +27,6 @@
 
     <!-- ===== HEADER ===== -->
     <header>
-      <div class="container-bar">
-        <div class="header-inner"></div>
-      </div>
       <nav>
         <div class="container-bar">
           <div class="nav-inner">
@@ -40,11 +37,15 @@
               <span class="brand">DELICIOUS</span>
               <span class="sub">Cafe &amp; Bakery</span>
             </div>
-            <a href="#" class="active"><i class="fas fa-home"></i> Trang chủ</a>
-            <a href="#"><i class="fas fa-th-large"></i> Sản phẩm</a>
-            <a href="#"><i class="fas fa-info-circle"></i> Giới thiệu</a>
-            <a href="#"><i class="fas fa-blog"></i> Blog</a>
-            <a href="#"><i class="fas fa-phone"></i> Liên hệ</a>
+            <div class="nav-inner-right">
+              <a href="#" class="active"
+                ><i class="fas fa-home"></i> Trang chủ</a
+              >
+              <a href="#"><i class="fas fa-th-large"></i> Sản phẩm</a>
+              <a href="#"><i class="fas fa-info-circle"></i> Giới thiệu</a>
+              <a href="#"><i class="fas fa-blog"></i> Blog</a>
+              <a href="#"><i class="fas fa-phone"></i> Liên hệ</a>
+            </div>
 
             <div class="header-actions">
               <a href="#" class="cart-btn">
@@ -61,6 +62,7 @@
     <!-- ===== HERO ===== -->
     <section class="hero">
       <div class="container">
+        <div class=""></div>
         <div class="hero-content">
           <p class="label">Đặc sản của chúng tôi</p>
           <h1 class="hero-title">
@@ -96,12 +98,13 @@
             <span class="badge-sale">-15%</span>
 
             <img src="12.jpg" alt="Bánh Mousse caramel" class="auto-img" />
+
             <div class="product-info">
               <p class="product-name">Sample Product</p>
               <span class="product-price">120.000₫</span>
               <span class="product-price-old">150.000₫</span>
             </div>
-            <div class="product-actions">
+            <div class="product-actions-1">
               <button class="btn-cart">
                 <i class="fas fa-shopping-cart"></i>
               </button>
@@ -114,7 +117,7 @@
               <p class="product-name">Sample Product</p>
               <span class="product-price">120.000₫</span>
             </div>
-            <div class="product-actions">
+            <div class="product-actions-1">
               <button class="btn-cart">
                 <i class="fas fa-shopping-cart"></i>
               </button>
@@ -127,7 +130,7 @@
               <p class="product-name">Sample Product</p>
               <span class="product-price">120.000₫</span>
             </div>
-            <div class="product-actions">
+            <div class="product-actions-1">
               <button class="btn-cart">
                 <i class="fas fa-shopping-cart"></i>
               </button>
@@ -146,7 +149,6 @@
     <!-- ===== BÁNH NGỌT ===== -->
     <section class="cat-section" style="background: white">
       <div class="section-title">
-        <span class="icon"><i class="fas fa-birthday-cake"></i></span>
         <h2>BÁNH NGỌT</h2>
       </div>
       <div class="container">
@@ -157,7 +159,7 @@
         <div class="cat-layout">
           <div class="cat-sidebar">
             <!-- <div class="cat-sidebar-img-placeholder" style="background:linear-gradient(135deg,#3b1f0c,#7a3b1e)">🍩</div> -->
-            <img src="12.jpg" alt="Bánh Mousse caramel" class="auto-img" />
+            <img src="12.jpg" alt="Bánh Mousse caramel" class="product-img" />
             <div class="cat-list">
               <a href="#"
                 >Bánh ngọt loại 1 <i class="fas fa-chevron-right"></i
@@ -230,12 +232,7 @@
       <div class="container">
         <div class="cat-layout">
           <div class="cat-sidebar">
-            <div
-              class="cat-sidebar-img-placeholder"
-              style="background: linear-gradient(135deg, #3b1f0c, #5a2d14)"
-            >
-              🍫
-            </div>
+            <img src="12.jpg" alt="Bánh Mousse caramel" class="product-img" />
             <div class="cat-list" style="background: var(--gold)">
               <a href="#"
                 >Kem tươi loại 1 <i class="fas fa-chevron-right"></i
@@ -685,23 +682,24 @@
                 <input type="email" placeholder="Email của bạn..." />
                 <!-- <button>ĐĂNG KÝ</button> -->
               </div>
-             <div class="newsletter-form">
-                
+              <div class="newsletter-form">
                 <button>ĐĂNG KÝ</button>
               </div>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="footer-container">
-        <div class="footer-bottom">
-          <span
-            >© 2024 <a href="#">DELICIOUS</a>. Thiết kế bởi
-            <a href="#">ToanHoa</a></span
-          >
-          <div class="footer-bottom-links">
-            <a href="#">Trang chủ</a>
-            <a href="#">Sản phẩm</a>
-            <a href="#">Liên hệ</a>
+        <div class="footer-container-contact">
+          <!-- <div class="foorter-container"> -->
+          <div class="footer-bottom">
+            <span
+              >© 2024 <a href="#">DELICIOUS</a>. Thiết kế bởi
+              <a href="#">ToanHoa</a></span
+            >
+            <div class="footer-bottom-links">
+              <a href="#">Trang chủ</a>
+              <a href="#">Sản phẩm</a>
+              <a href="#">Liên hệ</a>
+            </div>
           </div>
         </div>
       </div>
