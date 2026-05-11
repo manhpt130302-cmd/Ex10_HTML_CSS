@@ -4,9 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DELICIOUS - Cà Phê & Bánh Ngọt</title>
-    <!-- <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Be+Vietnam+Pro:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"> -->
+
+    <!-- <link rel="stylesheet" href="style.css" /> -->
     <link rel="stylesheet" href="cssdemo.css" />
+    <!-- <link rel="stylesheet" href="style.css " /> -->
+    <link rel="stylesheet" href="icon.css" />
   </head>
   <body>
     <!-- ===== TOP BAR ===== -->
@@ -19,8 +21,7 @@
             <input type="text" placeholder="Tìm sản phẩm..." />
             <button><i class="fas fa-search"></i></button>
           </div>
-          <a href="#">Nhập vào tài khoản</a>
-          <a href="#">Đăng ký</a>
+          <a href="login.html">Đăng nhập & Đăng ký</a>
         </div>
       </div>
     </div>
@@ -34,11 +35,23 @@
               <div class="logo-icon"><i class="fas fa-utensils"></i></div>
             </a>
             <div class="logo-text">
-              <span class="brand">DELICIOUS</span>
+              <a
+                href="home.html"
+                class="brand"
+                style="
+                  display: block;
+                  color: inherit;
+                  text-decoration: none;
+                  padding: 0;
+                  margin: 0;
+                  line-height: inherit;
+                "
+                >DELICIOUS</a
+              >
               <span class="sub">Cafe &amp; Bakery</span>
             </div>
             <div class="nav-inner-right">
-              <a href="#" class="active"
+              <a href="home.html" class="active"
                 ><i class="fas fa-home"></i> Trang chủ</a
               >
               <a href="#"><i class="fas fa-th-large"></i> Sản phẩm</a>
@@ -48,7 +61,7 @@
             </div>
 
             <div class="header-actions">
-              <a href="#" class="cart-btn">
+              <a href="login.html" class="cart-btn">
                 <i class="fas fa-shopping-cart"></i>
                 Giỏ hàng
                 <span class="cart-count">0</span>
@@ -70,9 +83,8 @@
           </h1>
           <p class="hero-desc">
             Espresso Macchiato là một loại đồ uống nóng rất được ưa chuộng.
-            Thành phần của nó gồm cà phê espresso và sữa. Về vị thì 9% Espresso
-            Macchiato giống như cà phê đen, nhưng bổ sung thêm một chút sữa
-            tươi.
+            Thành phần của nó gồm cà phê espresso và sữa. Về cơ bản thì Espresso
+            Macchiato giống như cà phê sữa nhưng lượng sữa nhiều hơn.
           </p>
           <a href="#" class="btn-primary"
             >MUA NGAY <i class="fas fa-arrow-right"></i
@@ -98,7 +110,25 @@
             <span class="badge-sale">-15%</span>
 
             <img src="12.jpg" alt="Bánh Mousse caramel" class="auto-img" />
+            <!-- icon -->
+            <!-- <div class="product-view-actions">
+              <button class="view-btn">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="white">
+                  <path
+                    d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"
+                  />
+                </svg>
+              </button>
 
+              <button class="view-btn">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="white">
+                  <path
+                    d="M16 6V4c0-2.2-1.8-4-4-4S8 1.8 8 4v2H5c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2h-3zm-6-2c0-1.1.9-2 2-2s2.9 2.2 2v2H10V4zm10 16H4V8h16v12z"
+                  />
+                </svg>
+              </button>
+            </div> -->
+            <!-- icon -->
             <div class="product-info">
               <p class="product-name">Sample Product</p>
               <span class="product-price">120.000₫</span>
@@ -159,7 +189,7 @@
         <div class="cat-layout">
           <div class="cat-sidebar">
             <!-- <div class="cat-sidebar-img-placeholder" style="background:linear-gradient(135deg,#3b1f0c,#7a3b1e)">🍩</div> -->
-            <img src="12.jpg" alt="Bánh Mousse caramel" class="product-img" />
+            <img src="22.jpg" alt="Bánh Mousse caramel" class="product-img" />
             <div class="cat-list">
               <a href="#"
                 >Bánh ngọt loại 1 <i class="fas fa-chevron-right"></i
@@ -177,7 +207,7 @@
           </div>
           <div class="cat-products">
             <div class="product-card">
-              <img src="12.jpg" alt="Bánh Mousse caramel" class="product-img" />
+              <img src="13.jpg" alt="Bánh Mousse caramel" class="product-img" />
               <div class="product-info">
                 <p class="product-name">
                   Bánh phô mai tráng miệng cao cấp Pháp
@@ -191,7 +221,7 @@
               </div>
             </div>
             <div class="product-card">
-              <img src="12.jpg" alt="Bánh Mousse caramel" class="product-img" />
+              <img src="3.jpg" alt="Bánh Mousse caramel" class="product-img" />
               <div class="product-info">
                 <p class="product-name">
                   Bánh phô mai tráng miệng cao cấp Pháp
@@ -205,7 +235,7 @@
               </div>
             </div>
             <div class="product-card">
-              <img src="12.jpg" alt="Bánh Mousse caramel" class="product-img" />
+              <img src="9.jpg" alt="Bánh Mousse caramel" class="product-img" />
               <div class="product-info">
                 <p class="product-name">
                   Bánh phô mai tráng miệng cao cấp Pháp
@@ -232,7 +262,7 @@
       <div class="container">
         <div class="cat-layout">
           <div class="cat-sidebar">
-            <img src="12.jpg" alt="Bánh Mousse caramel" class="product-img" />
+            <img src="23.jpg" alt="Bánh Mousse caramel" class="product-img" />
             <div class="cat-list" style="background: var(--gold)">
               <a href="#"
                 >Kem tươi loại 1 <i class="fas fa-chevron-right"></i
@@ -250,7 +280,7 @@
           </div>
           <div class="cat-products">
             <div class="product-card">
-              <img src="12.jpg" alt="Bánh Mousse caramel" class="product-img" />
+              <img src="1.jpg" alt="Bánh Mousse caramel" class="product-img" />
               <div class="product-info">
                 <p class="product-name">
                   Bánh phô mai tráng miệng cao cấp Pháp
@@ -264,7 +294,7 @@
               </div>
             </div>
             <div class="product-card">
-              <img src="12.jpg" alt="Bánh Mousse caramel" class="product-img" />
+              <img src="5.jpg" alt="Bánh Mousse caramel" class="product-img" />
               <div class="product-info">
                 <p class="product-name">
                   Bánh phô mai tráng miệng cao cấp Pháp
@@ -278,7 +308,7 @@
               </div>
             </div>
             <div class="product-card">
-              <img src="12.jpg" alt="Bánh Mousse caramel" class="product-img" />
+              <img src="11.jpg" alt="Bánh Mousse caramel" class="product-img" />
               <div class="product-info">
                 <p class="product-name">
                   Bánh phô mai tráng miệng cao cấp Pháp
@@ -305,7 +335,7 @@
       <div class="container">
         <div class="cat-layout">
           <div class="cat-sidebar">
-            <img src="12.jpg" alt="Bánh Mousse caramel" class="product-img" />
+            <img src="24.jpg" alt="Bánh Mousse caramel" class="product-img" />
             <div class="cat-list" style="background: #d32f2f">
               <a href="#"
                 >Đồ uống loại 1 <i class="fas fa-chevron-right"></i
@@ -323,7 +353,7 @@
           </div>
           <div class="cat-products">
             <div class="product-card">
-              <img src="12.jpg" alt="Bánh Mousse caramel" class="product-img" />
+              <img src="18.jpg" alt="Bánh Mousse caramel" class="product-img" />
               <div class="product-info">
                 <p class="product-name">
                   Bánh phô mai tráng miệng cao cấp Pháp
@@ -337,7 +367,7 @@
               </div>
             </div>
             <div class="product-card">
-              <img src="12.jpg" alt="Bánh Mousse caramel" class="product-img" />
+              <img src="2.jpg" alt="Bánh Mousse caramel" class="product-img" />
               <div class="product-info">
                 <p class="product-name">
                   Bánh phô mai tráng miệng cao cấp Pháp
@@ -351,7 +381,7 @@
               </div>
             </div>
             <div class="product-card">
-              <img src="12.jpg" alt="Bánh Mousse caramel" class="product-img" />
+              <img src="4.jpg" alt="Bánh Mousse caramel" class="product-img" />
               <div class="product-info">
                 <p class="product-name">
                   Bánh phô mai tráng miệng cao cấp Pháp
@@ -443,7 +473,7 @@
               >
                 🍦
               </div> -->
-              <img src="7.jpg" alt="" class="blog-card-img" />
+              <img src="23.jpg" alt="" class="blog-card-img" />
             </div>
             <div class="blog-card-body">
               <span class="blog-card-tag">KEM TƯƠI</span>
@@ -459,16 +489,18 @@
                   margin-top: 10px;
                 "
               >
-                <span class="blog-card-date"
-                  ><i class="fas fa-calendar-alt"></i> 01/01/2024</span
+                <a
+                  href="#"
+                  class="read-more"
+                  style="color: #ff5722; font-style: italic"
+                  >Xem chi tiết</a
                 >
-                <a href="#" class="read-more">Xem thêm</a>
               </div>
             </div>
           </div>
           <div class="blog-card">
             <div style="position: relative">
-              <img src="15.jpg" alt="" class="blog-card-img" />
+              <img src="25.jpg" alt="" class="blog-card-img" />
             </div>
             <div class="blog-card-body">
               <span class="blog-card-tag">ĐỒ UỐNG</span>
@@ -484,10 +516,12 @@
                   margin-top: 10px;
                 "
               >
-                <span class="blog-card-date"
-                  ><i class="fas fa-calendar-alt"></i> 15/12/2023</span
+                <a
+                  href="#"
+                  class="read-more"
+                  style="color: #ff5722; font-style: italic"
+                  >Xem chi tiết</a
                 >
-                <a href="#" class="read-more">Xem thêm</a>
               </div>
             </div>
           </div>
@@ -510,10 +544,12 @@
                   margin-top: 10px;
                 "
               >
-                <span class="blog-card-date"
-                  ><i class="fas fa-calendar-alt"></i> 08/11/2023</span
+                <a
+                  href="#"
+                  class="read-more"
+                  style="color: #ff5722; font-style: italic"
+                  >Xem chi tiết</a
                 >
-                <a href="#" class="read-more">Xem thêm</a>
               </div>
             </div>
           </div>
@@ -526,7 +562,7 @@
       <div class="container" style="background: white">
         <div class="about-grid">
           <!-- <div class="about-img-placeholder">👨‍🍳</div> -->
-          <img src="12.jpg" alt="" class="about-img-placeholder" />
+          <img src="26.webp" alt="" class="about-img-placeholder" />
           <div class="about-content">
             <div class="logo-big">
               <div
@@ -547,26 +583,25 @@
               DELICIOUS
             </div>
             <p>
-              Được truyền cảm hứng và tận tâm với DELICIOUS bằng tâm huyết trao
-              đi những giá trị đặc biệt nhất cho khách hàng, chúng tôi không
-              ngừng mang lại hương vị tuyệt vời nhất từ thiên nhiên.
+              Được khởi xướng và vận hành bởi một nhóm người trẻ năng động, cửa
+              hàng bánh ngọt và đồ uống DELICIOUS đang dần khẳng định chỗ đứng
+              trong thị trường đồ ăn giải khát phong phú và đa dạng ở Hà Nội.
+              Hướng tới đối tượng khách hàng là các bạn trẻ năng động, chúng tôi
+              luôn quan tâm tới chất lượng và hình ảnh của sản phẩm.
             </p>
+            <p style="color: #ff5722; font-style: italic">Đọc thêm</p>
+
             <p>
-              Tại DELICIOUS, mỗi chiếc bánh, mỗi ly đồ uống đều được làm bằng
-              nguyên liệu tươi ngon nhất. Chúng tôi cam kết mang đến cho bạn
-              những sản phẩm chất lượng cao với giá cả hợp lý.
+              -------------------------------------------------------------------------------------------------------------------------
             </p>
-            <p>Kết nối với chúng tôi:</p>
-            <div class="social-links">
-              <a href="#" class="social-link fb"
-                ><i class="fab fa-facebook-f"></i
-              ></a>
-              <a href="#" class="social-link tw"
-                ><i class="fab fa-twitter"></i
-              ></a>
-              <a href="#" class="social-link yt"
-                ><i class="fab fa-youtube"></i
-              ></a>
+
+            <div class="social-container">
+              <span>Kết nối với chúng tôi:</span>
+              <div class="social-icons">
+                <a href="https://www.facebook.com" class="icon fb">f</a>
+                <a href="https://www.google.com" class="icon gp">g+</a>
+                <a href="https://www.youtube.com" class="icon yt">y</a>
+              </div>
             </div>
           </div>
         </div>
@@ -583,8 +618,8 @@
             </div>
             <p class="feature-title">CHUYỂN PHÁT NHANH</p>
             <p class="feature-desc">
-              Đảm bảo giao hàng tốc thần tốc. Dịch vụ 1 – 2 ngày làm việc. Giao
-              hàng miễn phí cho đơn từ 200.000₫
+              Chúng tôi miễn phí với đơn hàng trên 350.000đ tại Hà Nội và free
+              ship toàn quốc với đơn hàng 700.000đ
             </p>
           </div>
           <div class="feature-item">
@@ -593,16 +628,16 @@
             </div>
             <p class="feature-title">LÀM BÁNH THEO YÊU CẦU</p>
             <p class="feature-desc">
-              Thiết kế bánh theo ý muốn của bạn với đội ngũ thợ lành nghề tay
-              nghề cao, sáng tạo và tận tâm
+              Một chiếc bánh được thiết kế riêng biệt, độc đáo dành cho người
+              thân, bạn bè chắc hẳn sẽ là một món quà bất ngờ và đặc biệt nhất.
             </p>
           </div>
           <div class="feature-item">
             <div class="feature-icon green"><i class="fas fa-headset"></i></div>
             <p class="feature-title">HỖ TRỢ KHÁCH HÀNG</p>
             <p class="feature-desc">
-              Chúng tôi luôn sẵn sàng hỗ trợ khách hàng 24/7. Liên hệ qua
-              hotline hoặc chat trực tuyến
+              Trung tâm chăm sóc khách hàng của DELICIOUS, <br />
+              hotline <strong>(04)33 653 666</strong> để được hỗ trợ giải đáp
             </p>
           </div>
         </div>
@@ -617,12 +652,15 @@
             <div class="footer-col">
               <h4>LIÊN HỆ</h4>
               <p>
-                <i class="fas fa-map-marker-alt"></i> Số 2 – Tòa nhà Hanova
-                Group, 442 Đội Cấn, Ba Đình, Hà Nội
+                <i class="fas fa-map-marker-alt"></i> Tầng 4 - Tòa nhà Hanoi
+                Group, 442 Đội Cấn, Ba Đình, Hà Nội.
               </p>
-              <p><i class="fas fa-phone"></i> (04) 33.853.986</p>
-              <p><i class="fas fa-fax"></i> (04)2.3456.7890</p>
-              <p><i class="fas fa-envelope"></i> info@delicious.vn</p>
+              <p>
+                <i class="fas fa-phone"></i> (04) 6674 2332 <br />
+                Thứ 2 - Chủ nhật: 9:00 - 18:00.<br />
+              </p>
+
+              <p><i class="fas fa-envelope"></i> support@bizweb.vn</p>
             </div>
             <div class="footer-col">
               <h4>HỖ TRỢ KHÁCH HÀNG</h4>
@@ -639,11 +677,13 @@
                 </li>
                 <li>
                   <a href="#"
-                    ><i class="fas fa-angle-right"></i> Câu hỏi thường gặp</a
+                    ><i class="fas fa-angle-right"></i> Hướng dẫn trả góp</a
                   >
                 </li>
                 <li>
-                  <a href="#"><i class="fas fa-angle-right"></i> Khuyến mãi</a>
+                  <a href="#"
+                    ><i class="fas fa-angle-right"></i> Quy chế hoạt động</a
+                  >
                 </li>
               </ul>
             </div>
@@ -675,9 +715,7 @@
             </div>
             <div class="footer-col">
               <h4>ĐĂNG KÝ NHẬN TIN</h4>
-              <p>
-                Đăng ký nhận thông tin ưu đãi và tin tức mới nhất từ DELICIOUS
-              </p>
+              <p>Đăng ký nhận thông tin khuyến mãi và món ăn mới</p>
               <div class="newsletter-form">
                 <input type="email" placeholder="Email của bạn..." />
                 <!-- <button>ĐĂNG KÝ</button> -->
@@ -692,29 +730,19 @@
           <!-- <div class="foorter-container"> -->
           <div class="footer-bottom">
             <span
-              >© 2024 <a href="#">DELICIOUS</a>. Thiết kế bởi
-              <a href="#">ToanHoa</a></span
+              >© Bản quyền thuộc về <a href="#">DELICIOUS</a>. Phát triển bởi
+              <a href="#">Bizweb</a></span
             >
             <div class="footer-bottom-links">
               <a href="#">Trang chủ</a>
               <a href="#">Sản phẩm</a>
+              <a href="#">Giới thiệu</a>
+              <a href="#">Blog</a>
               <a href="#">Liên hệ</a>
             </div>
           </div>
         </div>
       </div>
     </footer>
-    <!-- <script>
-      // 1. CHỈ CẦN SỬA ĐƯỜNG DẪN THƯ MỤC TẠI ĐÂY
-      const baseImagePath = "D:\\IT\\sapo\\ex11\\";
-
-      // 2. Tự động gắn đường dẫn vào các ảnh có class "auto-img"
-      document.querySelectorAll(".auto-img").forEach((img) => {
-        const fileName = img.getAttribute("data-src");
-        if (fileName) {
-          img.src = baseImagePath + fileName;
-        }
-      });
-    </script> -->
   </body>
 </html>

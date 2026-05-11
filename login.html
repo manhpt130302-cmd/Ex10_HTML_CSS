@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"> -->
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="login.css" />
+    <link rel="stylesheet" href="icon.css" />
   </head>
   <body>
     <!-- ===== TOP BAR ===== -->
@@ -20,7 +21,7 @@
             <input type="text" placeholder="Tìm sản phẩm..." />
             <button><i class="fas fa-search"></i></button>
           </div>
-          <a href="#">Nhập vào tài khoản</a>
+          <a href="#">Đăng nhập</a>
           <a href="#">Đăng ký</a>
         </div>
       </div>
@@ -31,15 +32,28 @@
       <nav>
         <div class="container-bar">
           <div class="nav-inner">
-            <a href="#" class="logo">
+            <a href="home.html" class="logo">
               <div class="logo-icon"><i class="fas fa-utensils"></i></div>
             </a>
             <div class="logo-text">
-              <span class="brand">DELICIOUS</span>
+              <!-- <span class="brand">DELICIOUS</span> -->
+              <a
+                href="home.html"
+                class="brand"
+                style="
+                  display: block;
+                  color: inherit;
+                  text-decoration: none;
+                  padding: 0;
+                  margin: 0;
+                  line-height: inherit;
+                "
+                >DELICIOUS</a
+              >
               <span class="sub">Cafe &amp; Bakery</span>
             </div>
             <div class="nav-inner-right">
-              <a href="#" class="active"
+              <a href="home.html" class="active"
                 ><i class="fas fa-home"></i> Trang chủ</a
               >
               <a href="#"><i class="fas fa-th-large"></i> Sản phẩm</a>
@@ -112,12 +126,15 @@
             <div class="footer-col">
               <h4>LIÊN HỆ</h4>
               <p>
-                <i class="fas fa-map-marker-alt"></i> Số 2 – Tòa nhà Hanova
-                Group, 442 Đội Cấn, Ba Đình, Hà Nội
+                <i class="fas fa-map-marker-alt"></i> Tầng 4 - Tòa nhà Hanoi
+                Group, 442 Đội Cấn, Ba Đình, Hà Nội.
               </p>
-              <p><i class="fas fa-phone"></i> (04) 33.853.986</p>
-              <p><i class="fas fa-fax"></i> (04)2.3456.7890</p>
-              <p><i class="fas fa-envelope"></i> info@delicious.vn</p>
+              <p>
+                <i class="fas fa-phone"></i> (04) 6674 2332 <br />
+                Thứ 2 - Chủ nhật: 9:00 - 18:00.<br />
+              </p>
+
+              <p><i class="fas fa-envelope"></i> support@bizweb.vn</p>
             </div>
             <div class="footer-col">
               <h4>HỖ TRỢ KHÁCH HÀNG</h4>
@@ -134,11 +151,13 @@
                 </li>
                 <li>
                   <a href="#"
-                    ><i class="fas fa-angle-right"></i> Câu hỏi thường gặp</a
+                    ><i class="fas fa-angle-right"></i> Hướng dẫn trả góp</a
                   >
                 </li>
                 <li>
-                  <a href="#"><i class="fas fa-angle-right"></i> Khuyến mãi</a>
+                  <a href="#"
+                    ><i class="fas fa-angle-right"></i> Quy chế hoạt động</a
+                  >
                 </li>
               </ul>
             </div>
@@ -170,9 +189,7 @@
             </div>
             <div class="footer-col">
               <h4>ĐĂNG KÝ NHẬN TIN</h4>
-              <p>
-                Đăng ký nhận thông tin ưu đãi và tin tức mới nhất từ DELICIOUS
-              </p>
+              <p>Đăng ký nhận thông tin khuyến mãi và món ăn mới</p>
               <div class="newsletter-form">
                 <input type="email" placeholder="Email của bạn..." />
                 <!-- <button>ĐĂNG KÝ</button> -->
@@ -187,29 +204,19 @@
           <!-- <div class="foorter-container"> -->
           <div class="footer-bottom">
             <span
-              >© 2024 <a href="#">DELICIOUS</a>. Thiết kế bởi
-              <a href="#">ToanHoa</a></span
+              >© Bản quyền thuộc về <a href="#">DELICIOUS</a>. Phát triển bởi
+              <a href="#">Bizweb</a></span
             >
             <div class="footer-bottom-links">
               <a href="#">Trang chủ</a>
               <a href="#">Sản phẩm</a>
+              <a href="#">Giới thiệu</a>
+              <a href="#">Blog</a>
               <a href="#">Liên hệ</a>
             </div>
           </div>
         </div>
       </div>
     </footer>
-    <!-- <script>
-      // 1. CHỈ CẦN SỬA ĐƯỜNG DẪN THƯ MỤC TẠI ĐÂY
-      const baseImagePath = "D:\\IT\\sapo\\ex11\\";
-
-      // 2. Tự động gắn đường dẫn vào các ảnh có class "auto-img"
-      document.querySelectorAll(".auto-img").forEach((img) => {
-        const fileName = img.getAttribute("data-src");
-        if (fileName) {
-          img.src = baseImagePath + fileName;
-        }
-      });
-    </script> -->
   </body>
 </html>

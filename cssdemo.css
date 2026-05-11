@@ -131,7 +131,7 @@ header {
 .logo-text .sub {
   font-size: 9px;
   letter-spacing: 3px;
-  color: var(--text-light);
+  color: var(--primary);
   text-transform: uppercase;
 }
 
@@ -1007,6 +1007,23 @@ footer {
 .footer-bottom-links a {
   color: #bbb;
   font-size: 12px;
+}
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-col ul li {
+  position: relative;
+  padding-left: 15px;
+  margin-bottom: 8px;
+}
+/* Tạo dấu chấm nhỏ phía trước */
+.footer-col ul li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #ccc;
 }
 
 .dots {
