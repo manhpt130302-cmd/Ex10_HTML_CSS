@@ -110,7 +110,8 @@
 }
 /* Thêm vào đầu file hoặc cuối file */
 html {
-  height: 100%;
+ height: auto; /* Thay vì cố định 100% */
+  min-height: 100%;
 }
 
 body {
@@ -119,12 +120,15 @@ body {
   min-height: 100vh;
   margin: 0;
   padding: 0;
+   
 }
 
 .main {
-  flex: 1; /* Chiếm toàn bộ khoảng trống còn lại */
+  flex: 1 0 auto; /* Chiếm toàn bộ khoảng trống còn lại */
   background: #f5f5f5;
   padding: 20px 0 0; /* Bỏ padding-bottom */
+  padding-bottom: 80px;
+
 }
 
 /* Footer tự động xuống cuối */

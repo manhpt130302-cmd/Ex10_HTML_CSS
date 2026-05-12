@@ -1080,6 +1080,7 @@ footer {
 .footer-top {
   padding: 50px 0 0px; /* Padding: trên=50px, 2 bên=0, dưới=30px */
   border-bottom: 1px solid rgba(255, 255, 255, 0.08); /* Viền dưới mờ trắng 8% */
+
 }
 /* Grid 4 cột cho footer */
 .footer-grid {
